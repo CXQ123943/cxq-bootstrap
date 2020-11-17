@@ -8,7 +8,7 @@
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         div {
-            border: 1px solid red;
+            border: 2px solid red;
             box-sizing: border-box;
         }
     </style>
@@ -16,14 +16,11 @@
 <body>
 
 <section class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">2</div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">3</div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
-    </div>
+    <article class="row">
+        <div class="col-md-3 col-md-push-9">1</div>
+        <div class="col-md-9 col-md-pull-3">2</div>
+    </article>
 </section>
-
 
 <script src="../../jquery/jquery-3.2.1.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
