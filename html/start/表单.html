@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>表单</title>
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        section {
+            margin: 10px;
+            outline: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<section id="input-type">
+    <form>
+        <label>
+            <input type="text" value="text" class="form-control">
+            <input type="password" value="password" class="form-control">
+            <input type="datetime-local" value="datetime-local" class="form-control">
+            <input type="date" value="date" class="form-control">
+            <input type="month" value="month" class="form-control">
+            <input type="time" value="time" class="form-control">
+            <input type="week" value="week" class="form-control">
+            <input type="number" value="number" class="form-control">
+            <input type="email" value="email" class="form-control">
+            <input type="url" value="url" class="form-control">
+            <input type="search" value="search" class="form-control">
+            <input type="tel" value="tel" class="form-control">
+            <input type="color" value="color" class="form-control">
+            <select class="form-control">
+                <option>1111</option>
+                <option>2222</option>
+                <option>3333</option>
+            </select>
+            <textarea class="form-control">444</textarea>
+        </label>
+    </form>
+</section>
+
+<section id="input-size">
+    <form>
+        <label>
+            <input value="normal" class="form-control"><br/>
+            <input value="sm" class="form-control input-sm"><br/>
+            <input value="lg" class="form-control input-lg">
+        </label>
+    </form>
+</section>
+
+<section id="input-group">
+    <form>
+        <label class="input-group">
+            <span class="input-group-addon">￥</span>
+            <input class="form-control"/>
+            <span class="input-group-addon">.00 元</span>
+        </label>
+
+        <label class="input-group">
+            <input class="form-control"/>
+            <span class="input-group-btn">
+                <!--.input-group-btn类不要直接放在按钮上-->
+                <button type="button" class="btn btn-success">按钮1</button>
+                <button type="button" class="btn btn-success">按钮2</button>
+            </span>
+        </label>
+    </form>
+</section>
+
+<section id="input-checkbox">
+    <form action="">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"/>
+                <span>音乐</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"/>
+                <span>魔术</span>
+            </label>
+        </div>
+    </form>
+</section>
+
+<section id="input-checkbox-inline">
+    <form action="">
+        <div class="checkbox">
+            <label class="checkbox-inline">
+                <input type="checkbox"/>
+                <span>音乐</span>
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox"/>
+                <span>魔术</span>
+            </label>
+        </div>
+    </form>
+</section>
+
+<section id="form-group">
+    <form action="">
+        <div class="form-group form-group-lg">
+            <label><input value="lg-001" class="form-control"/></label>
+            <label><input value="lg-002" class="form-control"/></label>
+        </div>
+
+        <div class="form-group  form-group-sm">
+            <label><input value="sm-001" class="form-control"/></label>
+            <label><input value="sm-002" class="form-control"/></label>
+            <label><input value="sm-003" class="form-control"/></label>
+        </div>
+    </form>
+</section>
+
+<section id="feedback-check">
+    <form>
+        <div class="form-group has-success has-feedback">
+            <input id="feedback-check-1" type="text" class="form-control"/>
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-error has-feedback">
+            <input id="feedback-check-2" type="text" class="form-control"/>
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-warning has-feedback">
+            <input id="feedback-check-3" type="text" class="form-control"/>
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+        </div>
+
+        <label hidden="hidden" for="feedback-check-1"></label>
+        <label hidden="hidden" for="feedback-check-2"></label>
+        <label hidden="hidden" for="feedback-check-3"></label>
+    </form>
+</section>
+
+<section id="form-inline">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="form-inline-1">Name</label>
+            <input id="form-inline-1" type="text" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="form-inline-2">Email</label>
+            <input id="form-inline-2" type="email" class="form-control"/>
+        </div>
+    </form>
+</section>
+
+<section id="form-horizontal">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="form-horizontal-1" class="col-sm-1 control-label">Email</label>
+            <div class="col-sm-11">
+                <input id="form-horizontal-1" type="email" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="form-horizontal-2" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input id="form-horizontal-2" type="email" class="form-control"/>
+            </div>
+        </div>
+    </form>
+</section>
+
+<script src="../../jquery/jquery-3.2.1.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
