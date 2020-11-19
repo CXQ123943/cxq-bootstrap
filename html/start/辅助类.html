@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        section {
+            margin: 10px;
+            outline: 1px solid red;
+            padding: 10px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            margin: 2px;
+        }
+
+        #float div:last-child {
+            width: 500px;
+            height: 50px;
+            background: red;
+        }
+
+        #display span {
+            height: 100px;
+            width: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+
+<section id="color">
+    <span class="text-muted">前景色-柔和灰</span>
+    <span class="text-success">前景色-成功绿</span>
+    <span class="text-info">前景色-信息蓝</span>
+    <span class="text-primary">前景色-主要蓝</span>
+    <span class="text-warning">前景色-警告黄</span>
+    <span class="text-danger">前景色-危险红</span>
+</section>
+
+<section id="background-color">
+    <span class="bg-success">背景色-成功绿</span>
+    <span class="bg-info">背景色-信息蓝</span>
+    <span class="bg-primary">背景色-主要蓝</span>
+    <span class="bg-warning">背景色-警告黄</span>
+    <span class="bg-danger">背景色-危险红</span>
+</section>
+
+<section id="close">
+    <div style="width: 100px; height: 50px; outline: 1px solid red;">
+        <button type="button" class="close">&times;</button>
+    </div>
+</section>
+
+<section id="caret">
+    <button type="button"><span class="caret"></span></button>
+</section>
+
+<section id="float">
+    <div class="pull-left">左</div>
+    <div class="pull-right">右</div>
+    <div class="clearfix">清除浮动</div>
+</section>
+
+<section id="center-block">
+    <div class="center-block">居中</div>
+</section>
+
+<section id="display">
+    <span class="show">显示为区块</span>
+    <span class="hidden">隐藏</span>
+</section>
+
+<section id="visibility">
+
+    <!--当屏幕宽度小于768px时，显示为区块-->
+    <div class="visible-xs-block">只有手机能看见我</div>
+
+    <!--当屏幕宽度大于768px，小于992px时，显示为内联-->
+    <div class="visible-sm-inline">只有平板能看见我</div>
+
+    <!--当屏幕宽度大于992px，小于1200px时，显示为内联块-->
+    <div class="visible-md-inline-block">只有笔记本能看见我</div>
+
+    <!--当屏幕宽度大于1200px时，显示为区块-->
+    <div class="visible-lg-block">只有台式机能看见我</div>
+
+    <!--当屏幕宽度小于768px时，隐藏-->
+    <div class="hidden-xs">手机看不见我</div>
+
+    <!--当屏幕宽度大于768px，小于992px时，隐藏-->
+    <div class="hidden-sm">平板看不见我</div>
+
+    <!--当屏幕宽度大于992px，小于1200px时，隐藏-->
+    <div class="hidden-md">笔记本看不见我</div>
+
+    <!--当屏幕宽度大于1200px时，隐藏-->
+    <div class="hidden-lg">台式机看不见我</div>
+</section>
+
+<script src="../../jquery/jquery-3.2.1.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
